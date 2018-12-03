@@ -1,0 +1,10 @@
+<div class="card" style="width: 18rem;">
+    <img class="card-img-top" src="{{product.imagePath}}" alt="Card image cap" height="310">
+    <div class="card-body">
+        <h5 class="card-title ">{{product.name}}</h5>
+        <p class="card-text">{{product.desc.substring(0, 100)}} ...</p>
+        <span class="h2 d-block">${{product.price}}</span>
+        <a (click)="onDetail()" class="btn btn-secondary">See More</a>
+    </div>
+</div>
+
